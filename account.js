@@ -14,16 +14,16 @@ const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), te
 const  runRpc = async () => {
 
   // 获取主网信息
-  const info = await rpc.get_info();
+  // const info = await rpc.get_info();
   // console.log(info);
 
   // 获取账号的信息
   const accountInfo = await rpc.get_account(address);
-  // console.log(accountInfo);
+  console.log(accountInfo);
 
   //获取账号的资产
-  const balance = await rpc.get_currency_balance('eosio.token',address);
-  console.log(balance);
+  // const balance = await rpc.get_currency_balance('eosio.token',address);
+  // console.log(balance);
 
 };
 
